@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>Marcar Consulta</title>
+    <meta charset="UTF-8" name="author" content="Kevin Felipe Gonçalves Rosa"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{url_for('static', filename='estilo.css')}}"/>
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='icone.png')}}">
+    <script>
+        function verifica(){
+            let data = new Date(document.formulario.data.value);
+            let hoje = new Date();
+
+            if((data-hoje)<0){
+                alert("Data inválida, tente marcar para amanhã ou depois.");
+            }
+            else if(isNaN(data.getDay())){
+                alert("Data invalida");
+            }
+            else{
+                formulario.submit();
+            }
+        }
+    </script>
+</head>
+<body class="fundo">
+    <form method="POST" name="formulario" action="/usuario/" class="perguntas">
+        
+        <h1>Formulário para Consulta</h1>
+        <label>Nome:</label></br>
+        <input type="text" name="nome" placeholder="Nome completo"  required autofocus/></br>
+        <label>Email:</label></br>
+        <input type="email" name="email" placeholder="Ex:email@email.com" required/></br>
+        <label>Data:</label></br>
+        <input type="date" name="data" required/></br>
+
+        <input type="button" value="Enviar" onclick="verifica()"/>
+
+        </form>
+</body>
+</html>

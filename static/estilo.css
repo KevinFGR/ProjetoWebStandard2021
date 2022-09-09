@@ -1,0 +1,108 @@
+/*Modificações usadas nos três arquivos html*/
+body{
+    margin:0;
+}
+main{
+    width: 100%;
+}
+header{
+    /*esta tag é usada no index.html e no info.html sendo que no segundo 
+    foi mudado alguns itens de forma inline*/
+    padding:35px;
+    height:220px;
+    color:#ffffff;
+    display:flex;
+    background: -webkit-linear-gradient(top left, #67aeca,#675682);
+}
+.perfil{
+    /*configurações da imagem de perfil*/
+    border-radius:50%;
+    width:150px;
+    height:150px;
+    box-shadow:0 0 5px #e52a6f;
+    margin-top:20px;
+}
+.dados{
+    /*configurações das informações do cabeçalho*/
+    margin-left:15px;
+}
+.dados button{
+    width:185px;
+}
+h1{
+    font-family:verdana;
+}
+button{
+    height:40px;
+    background-color:#e52a6f;
+    text-align:center;
+    text-shadow: 0 0 2px black;
+    color:#ffffff;
+    font-size:15px;
+    font-weight: bold;
+    border: 0;
+    /*a configuração margin foi modificada inline no info.html*/
+}
+button:hover{
+    /*quando o cursor está sobre o botão*/
+    box-shadow:0 0 10px #aaaaaa;
+}
+button:active{
+    opacity:0.5;
+}
+.texto{
+    text-align: justify ;
+    font-family:arial;
+    padding:5%;
+    width:60%;
+    display:flex;
+    float: left;
+}
+.imagem{
+    width:30%;
+    margin-top:60px;
+    display: flex;
+    float: left;
+}
+/*Modificações usadas no consulta.html*/
+.fundo{
+    background: -webkit-linear-gradient(top left, #67aeca,#675682);
+    margin:auto;
+    padding:80px;
+    width:30%;
+    height:100%;
+    position:relative; /*para que ocupe de fato 100% da tela*/
+}
+.perguntas{
+    border-radius:0 80px 80px 80px;
+    box-shadow:0 0 15px #000000;
+    width:100%;
+    height:420px;
+    background-color:#e52a6f;
+    padding:35px;
+    color:#ffffff;
+    font-family:verdana;
+    font-size:20px;
+
+}
+input{
+    margin:0 0 15px 0;
+    width:80%;
+    height:25px;
+}
+input[type=date]{
+    width:60%;
+}
+input[type=button]{
+    width:100px;
+    height:45px;
+    background:-webkit-linear-gradient(top left, #67aeca,#675682);
+    font-size:20px;
+    color:#ffffff;
+    font-weight:bold;
+    border:0;
+    box-shadow:0 0 5px #ffffff;
+}
+input[type=button]:active{
+    opacity:0.5;
+}

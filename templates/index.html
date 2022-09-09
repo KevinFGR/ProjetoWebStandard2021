@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Psicóloga Cristina</title>
+    <meta name="author" content="Kevin Felipe Gonçalves Rosa"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{url_for('static',filename='estilo.css')}}"/>
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='icone.png')}}"/>
+</head>
+
+<body>
+<main>
+    <header>
+        <img src="{{url_for('static',filename='fotoPerfil.jpg')}}" alt="Foto de perfil" class="perfil"/>
+        <div class="dados">
+            <h1>Cristina Aparecida Gonçalves Torres Rosa</h1>
+            <h2>CRP:06/171124</h2>
+            <a href="cadastrar">
+                <button>Marcar consulta</button>
+            </a>
+        </div>
+    </header>
+    <section>
+        <div class="texto">
+            <div>
+            <p><b>O que é a terapia?</b></br>
+                A psicoterapia consiste em um conjunto de práticas terapêuticas</br>
+                 entre um paciente e psicólogo com a intenção de diminuir sofrimentos, </br
+                 >interpretar os eventos e acontecimentos da vida de uma pessoa.
+            </p>
+                <a href="info">
+                <button>Saiba mais</button>
+                </a>
+            </div>
+        </div> 
+        <div class="imagem">
+            <img src="{{url_for('static',filename='logo.png')}}" alt="Imagem logo" width="300px"/>
+        </div>
+</section>
+</main>
+</body>
+
+</html>
